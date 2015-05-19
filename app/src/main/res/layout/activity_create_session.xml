@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.pasedelista.app.pasedelista.Activity.CreateSessionActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="60"
+            android:text="Número de sesión:"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="30dp" />
+
+        <EditText
+            android:layout_weight="40"
+            android:id="@+id/edt_session_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="#ff000bf4" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bttn_create_session"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:background="@drawable/button"
+        android:text="Crear sesión"
+        android:textSize="18dp"
+        android:layout_marginBottom="120dp"
+        android:textColor="#FFFFFF" />
+
+    <LinearLayout
+        android:id="@+id/layout_session_type"
+        android:layout_below="@id/layout_input"
+        android:layout_above="@id/bttn_create_session"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Tipo:"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35dp" />
+
+        <RadioGroup
+            android:id="@+id/rdio_group_session_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rdio_session_practice"
+                android:checked="true"
+                android:text="Práctica"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp" />
+
+            <RadioButton
+                android:id="@+id/rdio_session_theory"
+                android:text="Teoría"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

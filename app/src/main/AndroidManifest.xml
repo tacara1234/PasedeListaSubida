@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pasedelista.app.pasedelista" >
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.CreateSessionActivity"
+            android:label="@string/title_activity_create_session"
+            android:parentActivityName=".Activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pasedelista.app.pasedelista.Activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Activity.ListPassActivity"
+            android:label="@string/title_activity_list_pass"
+            android:parentActivityName=".Activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pasedelista.app.pasedelista.Activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Activity.ShowListActivity"
+            android:label="@string/title_activity_show_list"
+            android:parentActivityName=".Activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pasedelista.app.pasedelista.Activity.MainActivity" />
+        </activity>
+
+        <provider
+            android:name=".Database.PassProvider"
+            android:authorities="com.pasedelista.app.pasedelista.provider"
+            android:exported="false" />
+    </application>
+
+</manifest>
