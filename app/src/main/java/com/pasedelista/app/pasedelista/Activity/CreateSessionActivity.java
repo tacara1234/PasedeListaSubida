@@ -73,10 +73,17 @@ public class CreateSessionActivity extends ActionBarActivity implements View.OnC
     @Override
     public void onClick( View view ){
 
+        if(mSessionNumber.getText().toString().length()==0){
+            Toast.makeText( CreateSessionActivity.this, "Faltan Datos para crear la Sesion", Toast.LENGTH_SHORT ).show();
+            return;
+        }
         int sessionNumber = Integer.parseInt( mSessionNumber.getText().toString() );
         if( !isSessionNumberValid( sessionNumber) ){
             Toast.makeText( CreateSessionActivity.this, "Numero de sesión invalido", Toast.LENGTH_SHORT ).show();
             return;
+        }
+        if(sessionNumber==0){
+
         }
 
         new CreateSessionTask( CreateSessionActivity.this /* context */, sessionNumber, getSessionTypeSelected() ).execute( ( Void[] ) null);

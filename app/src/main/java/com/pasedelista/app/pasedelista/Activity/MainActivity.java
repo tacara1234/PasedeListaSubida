@@ -51,7 +51,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
         switch ( v.getId() ){
             case R.id.bttn_check_assitance:
-                R.id.bttn_check_assitance.
+
                 nextStepIntent = new Intent( MainActivity.this /* context */, ShowListActivity.class );
                 break;
             case R.id.bttn_create_session:

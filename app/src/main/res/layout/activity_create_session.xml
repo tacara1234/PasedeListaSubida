@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:textSize="30dp" />
+            android:textSize="20dp" />
 
         <EditText
             android:layout_weight="40"
@@ -40,10 +40,9 @@
         android:layout_centerHorizontal="true"
         android:layout_width="150dp"
         android:layout_height="70dp"
-        android:background="@drawable/button"
+        android:background="@drawable/button_custom"
         android:text="Crear sesión"
         android:textSize="18dp"
-        android:layout_marginBottom="120dp"
         android:textColor="#FFFFFF" />
 
     <LinearLayout
@@ -59,7 +58,7 @@
             android:layout_marginTop="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="35dp" />
+            android:textSize="20dp" />
 
         <RadioGroup
             android:id="@+id/rdio_group_session_type"
@@ -74,7 +73,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="30dp" />
+                android:textSize="20dp" />
 
             <RadioButton
                 android:id="@+id/rdio_session_theory"
@@ -83,7 +82,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="30dp" />
+                android:textSize="20dp" />
 
         </RadioGroup>
 

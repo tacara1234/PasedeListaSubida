@@ -72,6 +72,7 @@ public class StudentLoader extends AsyncTaskLoader<Student[]> {
     }
 
     private Student[] fetchStudents() {
+
         /* fecthes the SD card root */
         File sdcard = Environment.getExternalStorageDirectory();
 
@@ -103,8 +104,14 @@ public class StudentLoader extends AsyncTaskLoader<Student[]> {
 
                 studentsList.add( new Student( name, dni ) );
             }
+        //studentsList.add( new Student( "LUIs", "123") );
+        //studentsList.add( new Student( "PABLO", "321") );
+        //studentsList.add( new Student( "JUAN", "456") );
+        //studentsList.add( new Student( "PEDRO", "654") );
+        //studentsList.add( new Student( "RICARDO", "135") );
 
-            Student[] students = new Student[ studentsList.size() ];
+
+        Student[] students = new Student[ studentsList.size() ];
             studentsList.toArray( students );
 
             if( students != null && students.length > 0 ){
@@ -113,8 +120,8 @@ public class StudentLoader extends AsyncTaskLoader<Student[]> {
 
             return students;
         } catch (IOException e) {
-            //You'll need to add proper error handling here
-            e.printStackTrace();
+          //  You'll need to add proper error handling here
+          e.printStackTrace();
         }
 
         return null;

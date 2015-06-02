@@ -20,7 +20,7 @@
             android:layout_height="100dp"
             android:text="Crear Sesión"
             android:textSize="18dp"
-            android:background="@drawable/button"
+            android:background="@drawable/button_custom"
             android:textColor="#FFFFFF"
             android:layout_marginBottom="50dp" />
 
@@ -30,7 +30,7 @@
             android:layout_height="100dp"
             android:text="Pasar Lista"
             android:textSize="18dp"
-            android:background="@drawable/button"
+            android:background="@drawable/button_custom"
             android:textColor="#FFFFFF"
             android:layout_marginBottom="50dp" />
 
@@ -40,7 +40,7 @@
             android:layout_height="100dp"
             android:text="Asistencias"
             android:textSize="18dp"
-            android:background="@drawable/button"
+            android:background="@drawable/button_custom"
             android:textColor="#FFFFFF"
             android:layout_marginBottom="50dp" />
 

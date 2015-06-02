@@ -24,6 +24,7 @@
 
         <Spinner
             android:id="@+id/spinner_session_num"
+            android:textColor="#000000"
             android:layout_weight="40"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
@@ -36,7 +37,7 @@
         android:layout_centerHorizontal="true"
         android:layout_width="150dp"
         android:layout_height="48dp"
-        android:background="@drawable/button"
+        android:background="@drawable/button_custom"
         android:text="Pasar Lista"
         android:textSize="18dp"
         android:textColor="#FFFFFF" />
